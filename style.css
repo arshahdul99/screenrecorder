@@ -1,0 +1,180 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.4s;
+}
+/* Header CSS */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    border-bottom: 0.1px solid silver;
+}
+header a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 5px;
+    width: auto;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0.1px solid silver;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.menu:hover{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+}
+.sub-menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 0.1px solid silver;
+    background: white;
+    position: absolute;
+    width: 160px;
+    padding: 10px;
+    top: 70px;
+    right: 10px;
+}
+.sub-menu a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: blueviolet;
+    text-align: center;
+    border-radius: 5px;
+}
+.sub-menu a:hover, a:active{
+    background: rgba(0,0,0,0.1);
+}
+#close-menu{
+    opacity: 0;
+    display: none;
+    transition: all 1s;
+}
+#main-sub{
+    opacity: 0;
+    display: none;
+    transition: all 1s;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 0.1px solid silver;
+    background: white;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+footer a{
+    color: blueviolet;
+}
+
+.Code{
+    background: blueviolet;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+}
+.RIZEN{
+    padding: 10px 20px;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container{
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: -1px -1px 3px 4px rgba(0,0,0,0.1);
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+p{
+    padding: 10px;
+    margin: 10px;
+}
+button{
+    padding: 10px 20px;
+    /* background: linear-gradient(90deg, blueviolet, blue);
+    color: white; */
+    border: 0.2px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: -1px -1px 3px 4px rgba(0,0,0,0.1);
+}
+.main-recoreder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    /* box-shadow: -1px -1px 3px 4px rgba(0,0,0,0.1); */
+}
+.vid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+video{
+    width: 100%;
+    border: 0.2px solid grey;
+    border-radius: 4px;
+}
+@media only screen and (max-width: 768px) {
+    #home{
+        padding: 5px;
+    }
+    .container{
+        width: 95%;
+    }
+}
